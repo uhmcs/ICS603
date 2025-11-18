@@ -1,0 +1,79 @@
+
+## Using the REST API
+
+### adding a new user
+curl -X POST "http://localhost:8000/api/users" \
+     -H "Content-Type: application/json" \
+     -d '{"firstname": "John", "email": "john@test.com"}'
+
+### adding second new user
+curl -X POST "http://localhost:8000/api/users" \
+     -H "Content-Type: application/json" \
+     -d '{"firstname": "Jane", "email": "jane@test.com"}'
+
+### Testing that the API is running
+curl http://localhost:8000/
+
+### Classifying a new reflection
+curl -X POST http://localhost:8000/api/reflections/classify \
+  -H "Content-Type: application/json" \
+  -d '{
+    "title": "Learning Python",
+    "text": "Today I spent time learning about async programming in Python. It was challenging but rewarding.",
+    "timestamp": "2025-11-13T10:30:00Z"
+  }'
+
+
+### Adding a new reflection
+curl -X POST http://localhost:8000/api/reflections \
+  -H "Content-Type: application/json" \
+  -d '{
+    "title": "Morning Meditation",
+    "text": "Had a peaceful meditation session focusing on gratitude and presence.",
+    "timestamp": "2025-11-13T08:00:00Z",
+	"topics":["learning","programming","asynchronous-programming"]
+  }'
+
+
+### Getting a new reflection by Id
+curl http://localhost:8000/api/reflections/1
+
+
+### Adding new topics
+curl -X POST http://localhost:8000/api/topics \
+  -H "Content-Type: application/json" \
+  -d '{"names": ["meditation", "Cooking"]}'
+
+### Getting all the topics
+curl -X GET http://localhost:8000/api/topics
+
+
+### simple title and text examples you can copy and paste into the "Add Reflection" form.
+
+---
+
+**Example 1: (To match "learning" and "productivity")**
+
+* **Title:** `Learning Python`
+* **Text:** `Today I spent time learning about async programming in Python. It was challenging but rewarding. I feel much more productive now.`
+
+---
+
+**Example 2: (To match "health")**
+
+* **Title:** `Morning Run`
+* **Text:** `Had a great 5k run along the beach. My health is a priority and I felt strong and clear-headed afterward. It's a great way to manage stress.`
+
+---
+
+**Example 3: (To match "relationships" and "parenting")**
+
+* **Title:** `Family Dinner`
+* **Text:** `We had a family dinner tonight, no phones allowed. It was great to connect with the kids and talk about their week. These moments are important for our relationships.`
+
+---
+
+**Example 4: (To create a new topic, "Cooking")**
+
+* **Title:** `New Recipe`
+* **Text:** `I tried a new sourdough bread recipe today. The whole house smells amazing. I really enjoy the process of baking and cooking.`
