@@ -30,7 +30,7 @@ View a single reflection by ID.
 
 AI Topic Classification: When a new reflection is submitted, it is automatically sent to an AI agent to generate a list of relevant topics.
 
-User Filtering: The main reflections list can be filtered by user.
+User Filtering: The main reflections list can be filtered by user. 
 
 Many-to-Many Relationships:
 
