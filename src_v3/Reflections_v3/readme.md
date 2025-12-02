@@ -40,10 +40,10 @@ Each reflection is linked to multiple topics via the reflection_topics table.
 
 Project Structure
 
-Reflections
-├── backend/
-│   ├── api.py           # Defines the FastAPI app and all API endpoints
-│   ├── classifier.py    # AI topic classification logic
+Reflections  
+├── backend/  
+│   ├── api.py           # Defines the FastAPI app and all API endpoints  
+│   ├── classifier.py    # AI topic classification logic  
 │   ├── create_db.py     # Script to initialize database tables
 │   ├── models.py        # SQLAlchemy database models (User, Reflection, Topic)
 │   └── __init__.py
