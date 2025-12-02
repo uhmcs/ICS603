@@ -42,21 +42,21 @@ Project Structure
 
 Reflections  
 ├── backend/  
-│   ├── api.py           # Defines the FastAPI app and all API endpoints  
-│   ├── classifier.py    # AI topic classification logic  
-│   ├── create_db.py     # Script to initialize database tables  
-│   ├── models.py        # SQLAlchemy database models (User, Reflection, Topic)  
+│   ├── api.py               # Defines the FastAPI app and all API endpoints  
+│   ├── classifier.py        # AI topic classification logic  
+│   ├── create_db.py         # Script to initialize database tables  
+│   ├── models.py            # SQLAlchemy database models (User, Reflection, Topic)  
 │   └── __init__.py  
 ├── frontend/  
-│   ├── components/      # Holds individual page components  
+│   ├── components/          # Holds individual page components  
 │   │   ├── layout.py  
 │   │   ├── reflection_detail.py  
 │   │   ├── reflection_form.py  
 │   │   └── reflection_list.py  
-│   ├── ui.py          # Defines all front-end UI routes and mounts the API  
+│   ├── ui.py               # Defines all front-end UI routes and mounts the API  
 │   └── __init__.py  
-├── main.py              # The main entry point to run the application  
-└── .env.example         # Example environment variables  
+├── main.py                 # The main entry point to run the application  
+└── .env.example            # Example environment variables  
 
 
 Setup & Installation  
