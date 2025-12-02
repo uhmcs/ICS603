@@ -44,24 +44,24 @@ Reflections
 ├── backend/  
 │   ├── api.py           # Defines the FastAPI app and all API endpoints  
 │   ├── classifier.py    # AI topic classification logic  
-│   ├── create_db.py     # Script to initialize database tables
-│   ├── models.py        # SQLAlchemy database models (User, Reflection, Topic)
-│   └── __init__.py
-├── frontend/
-│   ├── components/      # Holds individual page components
-│   │   ├── layout.py
-│   │   ├── reflection_detail.py
-│   │   ├── reflection_form.py
-│   │   └── reflection_list.py
-│   ├── ui.py          # Defines all front-end UI routes and mounts the API
-│   └── __init__.py
-├── main.py              # The main entry point to run the application
-└── .env.example         # Example environment variables
+│   ├── create_db.py     # Script to initialize database tables  
+│   ├── models.py        # SQLAlchemy database models (User, Reflection, Topic)  
+│   └── __init__.py  
+├── frontend/  
+│   ├── components/      # Holds individual page components  
+│   │   ├── layout.py  
+│   │   ├── reflection_detail.py  
+│   │   ├── reflection_form.py  
+│   │   └── reflection_list.py  
+│   ├── ui.py          # Defines all front-end UI routes and mounts the API  
+│   └── __init__.py  
+├── main.py              # The main entry point to run the application  
+└── .env.example         # Example environment variables  
 
 
-Setup & Installation
+Setup & Installation  
 
-1. Clone the Repository
+1. Clone the Repository  
 
 git clone <your-repo-url>
 cd <your-repo-name>
@@ -100,16 +100,16 @@ Create a .env file in the root directory. Copy the contents of .env.example (or 
 
 .env
 
-# Your PostgreSQL Session Pooler connection string
-# SUPABASE_DB_URL="postgresql://user:password@host:port/dbname"
-user=[YOUR_USER_NAME] 
-password=[Your_Password]
-host=aws-1-us-west-1.pooler.supabase.com 
-port=5432 
-dbname=postgres
+# Your PostgreSQL Session Pooler connection string  
+# SUPABASE_DB_URL="postgresql://user:password@host:port/dbname"  
+user=[YOUR_USER_NAME]   
+password=[Your_Password]  
+host=aws-1-us-west-1.pooler.supabase.com   
+port=5432   
+dbname=postgres  
 
-# Your OpenAI API Key for the classifier
-OPENAI_API_KEY="sk-..."
+# Your OpenAI API Key for the classifier  
+OPENAI_API_KEY="sk-..."  
 
 
 5. Initialize the Database
